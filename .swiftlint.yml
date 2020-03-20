@@ -1,0 +1,4 @@
+# swiftlint 0.38.0: Toroidal Agitation
+disabled_rules:
+ - identifier_name
+line_length: 120
