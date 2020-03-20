@@ -1,21 +1,29 @@
 PODS:
+  - Nimble (8.0.5)
+  - Quick (2.2.0)
   - ReactiveCocoa (10.2.0):
     - ReactiveSwift (~> 6.2)
   - ReactiveSwift (6.2.1)
 
 DEPENDENCIES:
+  - Nimble (~> 8.0)
+  - Quick (~> 2.2)
   - ReactiveCocoa (~> 10.2)
   - ReactiveSwift (~> 6.2)
 
 SPEC REPOS:
   trunk:
+    - Nimble
+    - Quick
     - ReactiveCocoa
     - ReactiveSwift
 
 SPEC CHECKSUMS:
+  Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
   ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
 
-PODFILE CHECKSUM: e68142b02e54728b74488df6a629807f91fef797
+PODFILE CHECKSUM: 607ef1aeab405c2e3c5bba765f56872fca2c21a7
 
 COCOAPODS: 1.8.4

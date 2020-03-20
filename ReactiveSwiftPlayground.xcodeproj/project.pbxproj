@@ -13,7 +13,8 @@
 		B91AC1762424D46F009134B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91AC1742424D46F009134B0 /* Main.storyboard */; };
 		B91AC1782424D473009134B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91AC1772424D473009134B0 /* Assets.xcassets */; };
 		B91AC17B2424D473009134B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91AC1792424D473009134B0 /* LaunchScreen.storyboard */; };
-		B91AC1862424D473009134B0 /* ReactiveSwiftPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91AC1852424D473009134B0 /* ReactiveSwiftPlaygroundTests.swift */; };
+		B91AC1862424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift */; };
+		B920207D2424D7E900721730 /* ReactiveSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B920207C2424D7E900721730 /* ReactiveSwift+Extensions.swift */; };
 		CE75D1B131E55CC0EC9449C1 /* Pods_ReactiveSwiftPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA371C39584D5BD3051D1596 /* Pods_ReactiveSwiftPlaygroundTests.framework */; };
 		FC6F9654B84A2AE5C9CDB8DF /* Pods_ReactiveSwiftPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295C388722CE8548567662AD /* Pods_ReactiveSwiftPlayground.framework */; };
 /* End PBXBuildFile section */
@@ -43,8 +44,9 @@
 		B91AC17A2424D473009134B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B91AC17C2424D473009134B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B91AC1812424D473009134B0 /* ReactiveSwiftPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveSwiftPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B91AC1852424D473009134B0 /* ReactiveSwiftPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveSwiftPlaygroundTests.swift; sourceTree = "<group>"; };
+		B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronouslyAccessReactiveSignal.swift; sourceTree = "<group>"; };
 		B91AC1872424D473009134B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B920207C2424D7E900721730 /* ReactiveSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReactiveSwift+Extensions.swift"; sourceTree = "<group>"; };
 		FA371C39584D5BD3051D1596 /* Pods_ReactiveSwiftPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwiftPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 		B91AC16D2424D46F009134B0 /* ReactiveSwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				B920207C2424D7E900721730 /* ReactiveSwift+Extensions.swift */,
 				B91AC16E2424D46F009134B0 /* AppDelegate.swift */,
 				B91AC1702424D46F009134B0 /* SceneDelegate.swift */,
 				B91AC1722424D46F009134B0 /* ViewController.swift */,
@@ -125,7 +128,7 @@
 		B91AC1842424D473009134B0 /* ReactiveSwiftPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				B91AC1852424D473009134B0 /* ReactiveSwiftPlaygroundTests.swift */,
+				B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift */,
 				B91AC1872424D473009134B0 /* Info.plist */,
 			);
 			path = ReactiveSwiftPlaygroundTests;
@@ -162,6 +165,7 @@
 				B91AC17D2424D473009134B0 /* Sources */,
 				B91AC17E2424D473009134B0 /* Frameworks */,
 				B91AC17F2424D473009134B0 /* Resources */,
+				BC40A144C03BE9EA01CD152C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +315,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null && [[ -z \"$CI\" ]]; then\n  swiftlint\nelse\n  echo \"skipping swiftlint\"\nfi\n";
 		};
+		BC40A144C03BE9EA01CD152C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveSwiftPlaygroundTests/Pods-ReactiveSwiftPlaygroundTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveSwiftPlaygroundTests/Pods-ReactiveSwiftPlaygroundTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactiveSwiftPlaygroundTests/Pods-ReactiveSwiftPlaygroundTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -318,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B920207D2424D7E900721730 /* ReactiveSwift+Extensions.swift in Sources */,
 				B91AC1732424D46F009134B0 /* ViewController.swift in Sources */,
 				B91AC16F2424D46F009134B0 /* AppDelegate.swift in Sources */,
 				B91AC1712424D46F009134B0 /* SceneDelegate.swift in Sources */,
@@ -328,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91AC1862424D473009134B0 /* ReactiveSwiftPlaygroundTests.swift in Sources */,
+				B91AC1862424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +540,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B92283281442C4CEA8DEBFE /* Pods-ReactiveSwiftPlaygroundTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReactiveSwiftPlaygroundTests/Info.plist;
@@ -540,7 +561,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5416699A828BE16A6DDD8BA6 /* Pods-ReactiveSwiftPlaygroundTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReactiveSwiftPlaygroundTests/Info.plist;

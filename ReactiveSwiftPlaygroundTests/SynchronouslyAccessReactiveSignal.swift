@@ -1,18 +1,21 @@
 //
-//  ReactiveSwiftPlaygroundTests.swift
-//  ReactiveSwiftPlaygroundTests
+//  SynchronouslyAccessReactiveSignal.swift
+//  SynchronouslyAccessReactiveSignal
 //
 //  Created by Julian Caicedo on 20.03.20.
 //  Copyright © 2020 juliancadi.com. All rights reserved.
 //
 
+import Foundation
+import ReactiveCocoa
+import ReactiveSwift
 import XCTest
 @testable import ReactiveSwiftPlayground
 
-class ReactiveSwiftPlaygroundTests: XCTestCase {
+class SynchronouslyAccessReactiveSignal: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // SynchronouslyAccessReactiveSignal
     }
 
     override func tearDown() {

@@ -12,6 +12,9 @@ target 'ReactiveSwiftPlayground' do
   target 'ReactiveSwiftPlaygroundTests' do
     inherit! :search_paths
     # Pods for testing
+
+    pod 'Quick', '~> 2.2'
+    pod 'Nimble', '~> 8.0'
   end
 
 end
