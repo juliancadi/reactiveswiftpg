@@ -2,3 +2,6 @@
 disabled_rules:
  - identifier_name
 line_length: 120
+excluded:
+  - Carthage
+  - Pods

@@ -1,0 +1,6 @@
+framework module Pods_ReactiveSwiftPlaygroundTests {
+  umbrella header "Pods-ReactiveSwiftPlaygroundTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
