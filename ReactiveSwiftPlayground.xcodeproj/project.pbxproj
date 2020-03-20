@@ -13,8 +13,10 @@
 		B91AC1762424D46F009134B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91AC1742424D46F009134B0 /* Main.storyboard */; };
 		B91AC1782424D473009134B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91AC1772424D473009134B0 /* Assets.xcassets */; };
 		B91AC17B2424D473009134B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91AC1792424D473009134B0 /* LaunchScreen.storyboard */; };
-		B91AC1862424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift */; };
+		B91AC1862424D473009134B0 /* SynchronouslyAccessReactiveSignalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignalTests.swift */; };
 		B920207D2424D7E900721730 /* ReactiveSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B920207C2424D7E900721730 /* ReactiveSwift+Extensions.swift */; };
+		B92020832424DE4E00721730 /* FlatMapLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92020822424DE4E00721730 /* FlatMapLatest.swift */; };
+		B979E2E82425065600959C40 /* FlatMapLatestTakeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979E2E72425065600959C40 /* FlatMapLatestTakeOne.swift */; };
 		CE75D1B131E55CC0EC9449C1 /* Pods_ReactiveSwiftPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA371C39584D5BD3051D1596 /* Pods_ReactiveSwiftPlaygroundTests.framework */; };
 		FC6F9654B84A2AE5C9CDB8DF /* Pods_ReactiveSwiftPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295C388722CE8548567662AD /* Pods_ReactiveSwiftPlayground.framework */; };
 /* End PBXBuildFile section */
@@ -44,9 +46,11 @@
 		B91AC17A2424D473009134B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B91AC17C2424D473009134B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B91AC1812424D473009134B0 /* ReactiveSwiftPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveSwiftPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronouslyAccessReactiveSignal.swift; sourceTree = "<group>"; };
+		B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronouslyAccessReactiveSignalTests.swift; sourceTree = "<group>"; };
 		B91AC1872424D473009134B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B920207C2424D7E900721730 /* ReactiveSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReactiveSwift+Extensions.swift"; sourceTree = "<group>"; };
+		B92020822424DE4E00721730 /* FlatMapLatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapLatest.swift; sourceTree = "<group>"; };
+		B979E2E72425065600959C40 /* FlatMapLatestTakeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapLatestTakeOne.swift; sourceTree = "<group>"; };
 		FA371C39584D5BD3051D1596 /* Pods_ReactiveSwiftPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwiftPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 		B91AC16D2424D46F009134B0 /* ReactiveSwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				B92020812424DE4300721730 /* Playground */,
 				B920207C2424D7E900721730 /* ReactiveSwift+Extensions.swift */,
 				B91AC16E2424D46F009134B0 /* AppDelegate.swift */,
 				B91AC1702424D46F009134B0 /* SceneDelegate.swift */,
@@ -128,10 +133,27 @@
 		B91AC1842424D473009134B0 /* ReactiveSwiftPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift */,
+				B91AC1852424D473009134B0 /* SynchronouslyAccessReactiveSignalTests.swift */,
 				B91AC1872424D473009134B0 /* Info.plist */,
 			);
 			path = ReactiveSwiftPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		B92020812424DE4300721730 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				B92020842424DE7100721730 /* SynchronouslyAccessReactiveSignal */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		B92020842424DE7100721730 /* SynchronouslyAccessReactiveSignal */ = {
+			isa = PBXGroup;
+			children = (
+				B92020822424DE4E00721730 /* FlatMapLatest.swift */,
+				B979E2E72425065600959C40 /* FlatMapLatestTakeOne.swift */,
+			);
+			path = SynchronouslyAccessReactiveSignal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +363,8 @@
 			files = (
 				B920207D2424D7E900721730 /* ReactiveSwift+Extensions.swift in Sources */,
 				B91AC1732424D46F009134B0 /* ViewController.swift in Sources */,
+				B979E2E82425065600959C40 /* FlatMapLatestTakeOne.swift in Sources */,
+				B92020832424DE4E00721730 /* FlatMapLatest.swift in Sources */,
 				B91AC16F2424D46F009134B0 /* AppDelegate.swift in Sources */,
 				B91AC1712424D46F009134B0 /* SceneDelegate.swift in Sources */,
 			);
@@ -350,7 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91AC1862424D473009134B0 /* SynchronouslyAccessReactiveSignal.swift in Sources */,
+				B91AC1862424D473009134B0 /* SynchronouslyAccessReactiveSignalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
